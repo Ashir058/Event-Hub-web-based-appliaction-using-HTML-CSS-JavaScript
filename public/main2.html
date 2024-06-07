@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Hub</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <header>
+
+        <a href="main2.html">
+            <h1><span class="event">Event </span><span class="hub">Hub</span></h1>
+        </a>
+    </header>
+    <div class="background-image">
+        <h1>MADE FOR THOSE WHO DO</h1>
+    </div>
+    <main>
+        <section class="form-container">
+            <div class="forms">
+                <div class="form-group">
+                    <label for="eventType">Looking for</label>
+                    <select id="eventType" name="eventType">
+            <option value="">Choose event type</option>
+            <option value="workshop">Workshop</option>
+            <option value="conference">Conference</option>
+            <option value="meetup">Meetup</option>
+          </select>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <select id="location" name="location">
+            <option value="">Choose location</option>
+            <option value="online">Online</option>
+            <option value="in-person">In-person</option>
+          </select>
+                </div>
+                <div class="form-group">
+                    <label for="dateTime">When</label>
+                    <input type="datetime-local" id="dateTime" name="dateTime">
+                </div>
+                <button type="submit"><i class="fas fa-search"></i></button>
+
+            </div>
+        </section>
+        <section class="upcoming-events">
+            <h2>Upcoming Events</h2>
+            <div class="event-grid">
+                <!-- <a href="Eventinfo.html" class="event-link"> -->
+                    <div class="event-card">
+                        <img src="Images/Image1.png" alt="Event Image">
+                        <a href="Eventinfo.html"><h3>Conference on Innovation</h3></a>
+                        <p>April 15, 2024 - April 17, 2024</p>
+                        <p>Islamabad, PK</p>
+                        <a href="register.html" class="event-btn">Register Here</a>
+                    </div>
+                <!-- </a> -->
+                <!-- <a href="Eventinfo.html" class="event-link"> -->
+                    <div class="event-card">
+                        <img src="Images/Image2.png" alt="Event Image">
+                        <a href="Eventinfo.html"><h3>Webinar on Digital Marketing</h3></a>
+                        <p>May 5, 2024</p>
+                        <p>Online</p>
+                        <a href="register.html" class="event-btn">Register Here</a>
+                    </div>
+                <!-- </a> -->
+                <!-- <a href="Eventinfo.html" class="event-link"> -->
+                    <div class="event-card">
+                        <img src="Images/Image3.png" alt="Event Image">
+                        <a href="Eventinfo.html"><h3>Networking Meetup</h3></a>
+                        <p>June 1, 2024</p>
+                        <p>Lahore, PK</p>
+                        <a href="register.html" class="event-btn">Register Here</a>
+                    </div>
+                <!-- </a> -->
+                <!-- <a href="Eventinfo.html" class="event-link"> -->
+                    <div class="event-card">
+                        <img src="Images/Image1.png" alt="Event Image">
+                        <a href="Eventinfo.html"><h3>Conference on Innovation</h3></a>
+                        <p>April 15, 2024 - April 17, 2024</p>
+                        <p>Islamabad, PK</p>
+                        <a href="register.html" class="event-btn">Register Here</a>
+                    </div>
+                <!-- </a>
+                <a href="Eventinfo.html" class="event-link"> -->
+                    <div class="event-card">
+                        <img src="Images/Image2.png" alt="Event Image">
+                        <a href="Eventinfo.html"><h3>Webinar on Digital Marketing</h3></a>
+                        <p>May 5, 2024</p>
+                        <p>Online</p>
+                        <a href="register.html" class="event-btn">Register Here</a>
+                    </div>
+                <!-- </a>
+                <a href="Eventinfo.html" class="event-link"> -->
+                    <div class="event-card">
+                        <img src="Images/Image3.png" alt="Event Image">
+                        <a href="Eventinfo.html"><h3>Networking Meetup</h3></a>
+                        <p>June 1, 2024</p>
+                        <p>Lahore, PK</p>
+                        <a href="register.html" class="event-btn">Register Here</a>
+                    </div>
+                <!-- </a> -->
+            </div>            
+        </section>
+        <section class="more-events">
+            <button class="load-more">Load more....</button>
+        </section>
+
+    </main>
+    <footer>
+        <div class="subscribe">
+            <h1><span class="event1">Event </span><span class="hub1">Hub</span></h1>
+            <form action="">
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+                <button class="sub-button">Subscribe</button>
+            </form>
+        </div>
+
+
+        <div class="footer-content">
+            <p>&copy; 2023 EventHub. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

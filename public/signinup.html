@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding Form</title>
+    <link rel="stylesheet" href="Css/signinup.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"></script>
+    <script src="script.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <script>
+      $(document).ready(function() {
+        // Handle Sign In Form submission
+        $("#signInForm").submit(function(event) {
+          event.preventDefault(); // Prevent default form submission
+          const email = $("#signInEmail").val();
+          const password = $("#signInPassword").val();
+          $.ajax({
+            url: '/signin',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify({ email, password }),
+            success: function(response) {
+              window.location.href = '/main2';
+            },
+            error: function(xhr) {
+              alert(xhr.responseJSON.message);
+            }
+          });
+        });
+
+        // Handle Sign Up Form submission
+        $("#signUpForm").submit(function(event) {
+          event.preventDefault(); // Prevent default form submission
+          const name = $("#signUpName").val();
+          const email = $("#signUpEmail").val();
+          const password = $("#signUpPassword").val();
+          $.ajax({
+            url: '/signup',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify({ name, email, password }),
+            success: function(response) {
+              window.location.href = '/signin';
+            },
+            error: function(xhr) {
+              alert(xhr.responseJSON.message);
+            }
+          });
+        });
+      });
+    </script>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <div class="event-hub-title">
+                <span class="event">Event</span><span class="hub"> Hub</span>
+            </div>
+            <form id="signUpForm" action="#">
+                <h1>Create Account</h1>
+                <input type="text" id="signUpName" placeholder="Name" required />
+                <input type="email" id="signUpEmail" placeholder="Email" required />
+                <input type="password" id="signUpPassword" placeholder="Password" required />
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <div class="event-hub-title">
+                <span class="event">Event</span><span class="hub"> Hub</span>
+            </div>
+            <form id="signInForm" action="#">
+                <h1>Sign in</h1>
+                <input type="email" id="signInEmail" placeholder="Email" required />
+                <input type="password" id="signInPassword" placeholder="Password" required />
+                <a href="#">Forgot your password?</a>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <button type="submit">Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <img src="Images/signin.png" alt="Welcome Image" class="welcome-image">
+                    <h1>Hello, Explorer!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <img src="Images/signup.png" alt="Explorer Background" class="explorer-background">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

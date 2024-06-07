@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form | CodingLab</title>
+    <link rel="stylesheet" href="Css/admin-log.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <script>
+      function validateLogin(event) {
+        event.preventDefault(); // Prevent form from submitting
+
+        // Get input values
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        // Check credentials
+        if (username === 'admin' && password === 'admin123') {
+          window.location.href = 'admin.html'; // Redirect to admin.html
+        } else {
+          alert('Invalid username or password');
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="title"><span>Login Form</span></div>
+        <form onsubmit="validateLogin(event)">
+          <div class="row">
+            <i class="fas fa-user"></i>
+            <input type="text" id="username" placeholder="Email or Phone" required>
+          </div>
+          <div class="row">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="password" placeholder="Password" required>
+          </div>
+          <div class="row button">
+            <input type="submit" value="Login">
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

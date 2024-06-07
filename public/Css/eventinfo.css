@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+
+.container {
+    width: 99.5%;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.event {
+    color: rgb(0, 0, 0);
+    /* Change text color of "Event" to white */
+}
+
+.hub {
+    color: #0163c5;
+    /* Change text color of "Hub" to blue */
+}
+header a{
+    text-decoration: none;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+.logo {
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+}
+
+.logo span {
+    color: #7848F4;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.login a{
+    text-decoration: none;
+    color: black;
+}
+.login {
+    font-size: 16px;
+}
+
+.signup {
+    padding: 15px 40px;
+    background-color: #7848F4;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signup a{
+    text-decoration: none;
+    color: white;
+}
+.hero-section {
+    position: relative;
+    width: 1320px;
+    height: 596px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(19, 19, 21, 0.50);
+    border-radius: 10px;
+}
+
+.back-button {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #7848F4;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    color: white;
+}
+
+.back-icon {
+    width: 20px;
+    height: 20px;
+    background: white;
+    margin-right: 5px;
+}
+
+.back-text {
+    font-size: 16px;
+}
+
+.hero-text {
+    position: absolute;
+    top: 30%;
+    left: 30px;
+    color: white;
+    width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.hero-text h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.view-map {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.map-icon {
+    width: 13px;
+    height: 17px;
+    background: white;
+    margin-right: 10px;
+}
+
+.map-text {
+    font-size: 18px;
+}
+
+.description {
+    width: 600px;
+    margin: 30px 0 0 120px;
+}
+
+.description h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+}
+
+.description p {
+    font-size: 16px;
+    color: #7E7E7E;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.organizer-contact {
+    width: 600px;
+    margin: 30px 0 0 120px;
+}
+
+.organizer-contact h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+}
+
+.organizer-contact p {
+    font-size: 16px;
+    color: #7E7E7E;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.organizer-contact a {
+    color: #7848F4;
+}
+
+.sidebar {
+    position: absolute;
+    top: 200px;
+    right: 100px;
+    width: 320px;
+}
+
+.date-time {
+    background-color: #F9F9F9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.date-time h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}
+
+.date-time p {
+    font-size: 16px;
+    color: #7E7E7E;
+    margin-top: 10px;
+}
+
+.no-refunds {
+    margin-top: 10px;
+}
+
+.add-calendar {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #27A5EE;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.book-now, .program-promoter {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book-now {
+    background-color: #27A5EE;
+}
+
+.program-promoter {
+    background-color: #7848F4;
+}
+
+.event-location {
+    margin-top: 30px;
+    background-color: #F9F9F9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.event-location h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}
+
+.location-info {
+    margin-top: 20px;
+}
+
+.location-info h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+}
+
+.location-info p {
+    font-size: 16px;
+    color: #7E7E7E;
+    margin-top: 10px;
+}
+
+.location-image {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.tags {
+    margin-top: 30px;
+    background-color: #F9F9F9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.tags h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}
+
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.tag {
+    background-color: #7848F4;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    width: 100%;
+    padding: 40px;
+    background-color: #131315;
+    color: white;
+}
+
+.footer-logo {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+
+.footer-logo span {
+    color: #7848F4;
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.email-input input[type="email"] {
+    padding-top: 14px;
+    padding-right: 13vw;
+    padding-bottom: 14px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 1px;
+    font-size: 1em;
+}
+
+
+.subscribe-button {
+    background-color: #27A5EE;
+    padding: 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.language-selector {
+    display: flex;
+    gap: 10px;
+}
+
+.language {
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.language.active {
+    background-color: #27A5EE;
+    color: white;
+}
+
+.footer-note {
+    font-size: 16px;
+    color: #7E7E7E;
+}
+
+.social-media-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
